@@ -1,15 +1,16 @@
 package model;
 
-import java.sql.Date;
-
 public class Docentes extends Funcionario {
 	private int siap;
 	private String areaVinculada;
 
 	public Docentes(String cpf, String nome, String endereco, 
-			Date dataAdmissao, String titulacao, double salarioBase) {
+			String dataAdmissao, String titulacao, double salarioBase, int siap, String areaVinculada) {
 		super(cpf, nome, endereco,
 				dataAdmissao, titulacao, salarioBase);	
+		this.siap = siap;
+		this.areaVinculada = areaVinculada;
+		
 	}
 
 	public int getSiap() {

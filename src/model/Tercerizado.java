@@ -1,20 +1,21 @@
 package model;
-import java.sql.Date;
 public class Tercerizado extends Funcionario {
-	private Date finalContrato;
+	private String finalContrato;
 	private String funcao;
 	
 	public Tercerizado(String cpf, String nome, String endereco, 
-			Date dataAdmissao, String titulacao, double salarioBase) {
+			String dataAdmissao, String titulacao, double salarioBase, String finalContrato, String funcao) {
 		super(cpf, nome, endereco,
 				dataAdmissao, titulacao, salarioBase);	
+		this.finalContrato = finalContrato;
+		this.funcao = funcao;
 	}
 
-	public Date getFinalContrato() {
+	public String getFinalContrato() {
 		return finalContrato;
 	}
 
-	public void setFinalContrato(Date finalContrato) {
+	public void setFinalContrato(String finalContrato) {
 		this.finalContrato = finalContrato;
 	}
 

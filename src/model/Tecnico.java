@@ -1,15 +1,16 @@
 package model;
 
-import java.sql.Date;
 
 public class Tecnico extends Funcionario{
 	private int siap;
 	private String departamento;
 	
 	public Tecnico(String cpf, String nome, String endereco, 
-			Date dataAdmissao, String titulacao, double salarioBase) {
+			String dataAdmissao, String titulacao, double salarioBase, int siap, String departamento) {
 		super(cpf, nome, endereco,
 				dataAdmissao, titulacao, salarioBase);	
+		this.siap = siap;
+		this.departamento = departamento;
 	}
 
 	public int getSiap() {

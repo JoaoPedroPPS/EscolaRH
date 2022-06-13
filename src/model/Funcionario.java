@@ -1,15 +1,14 @@
 package model;
-import java.sql.Date; // TESTE
 public abstract class Funcionario {
 	private String cpf;
 	private String nome;
 	private String endereco;
-	private Date dataAdmissao; //TESTE
+	private String dataAdmissao; //TESTE
 	private String titulacao;
 	private double salarioBase;
 	
 	public Funcionario(String cpf, String nome, String endereco, 
-			Date dataAdmissao, String titulacao, double salarioBase) {
+			String dataAdmissao, String titulacao, double salarioBase) {
 		this.cpf = cpf;
 		this.nome = nome;
 		this.endereco = endereco;
@@ -44,11 +43,11 @@ public abstract class Funcionario {
 		this.endereco = endereco;
 	}
 
-	public Date getDataAdmissao() {
+	public String getDataAdmissao() {
 		return dataAdmissao;
 	}
 
-	public void setDataAdmissao(Date dataAdmissao) {
+	public void setDataAdmissao(String dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
 
