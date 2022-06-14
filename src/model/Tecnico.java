@@ -48,10 +48,14 @@ public class Tecnico extends Funcionario{
 
 }
 	
+	
+	
 	@Override
 	public String toString() 
 	{
-		return "\ncpf: " + this.getCpf() + "\nnome: " + this.getNome() + "\nendereço: " + this.getEndereco() + "\ndata de emissão:" + this.getDataAdmissao() + "\ntitulação: " + this.getTitulacao() + "\nsalario base: " + this.getSalarioBase()
-		+ "\nsiape: " + this.getSiap() + "\ndepartamento: " + this.getDepartamento() + "\n\n\n";
+		return "\nCPF: " + this.getCpf() + "\nNome: " + this.getNome() + "\nEndereço: " + this.getEndereco() + 
+		"\nData de Emissão:" + this.getDataAdmissao() + "\nTitulação: " + this.getTitulacao() + "\nSalario Base: " + this.getSalarioBase() + 
+		"\nSalario Real: " + this.calculaSalario() + "\nSiape: " + this.getSiap() + "\nDepartamento: " + this.getDepartamento() +
+		"\n------------------------------------------------------------------------------------------------------------------\n";
 	}
 }

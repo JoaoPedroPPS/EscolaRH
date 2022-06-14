@@ -51,8 +51,10 @@ public class Docentes extends Funcionario {
 	@Override
 	public String toString() 
 	{
-		return "\ncpf: " + this.getCpf() + "\nnome: " + this.getNome() + "\nendereço: " + this.getEndereco() + "\ndata de emissão:" + this.getDataAdmissao() + "\ntitulação: " + this.getTitulacao() + "\nsalario base: " + this.getSalarioBase()
-		+ "\nsiape: " + this.getSiap() + "\narea vinculada: " + this.areaVinculada + "\n\n\n";
+		return "\nCPF: " + this.getCpf() + "\nNome: " + this.getNome() + "\nEndereço: " + this.getEndereco() + 
+		"\nData de Emissão:" + this.getDataAdmissao() + "\nTitulação: " + this.getTitulacao() + "\nSalario Base: " + this.getSalarioBase() + 
+		"\nSalario Real: " + this.calculaSalario() + "\nSiape: " + this.getSiap() + "\nArea Vinculada: " + this.areaVinculada +
+		"\n------------------------------------------------------------------------------------------------------------------\n";
 	}
 	
 }
