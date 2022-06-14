@@ -44,4 +44,11 @@ public class Tercerizado extends Funcionario {
 			return this.getSalarioBase();
 		
 	}
+	
+	@Override
+	public String toString() 
+	{
+		return "\ncpf: " + this.getCpf() + "\nnome: " + this.getNome() + "\nendereço: " + this.getEndereco() + "\ndata de emissão:" + this.getDataAdmissao() + "\ntitulação: " + this.getTitulacao() + "\nsalario base: " + this.getSalarioBase()
+		+ "\ndata final do contrato: " + this.getFinalContrato() + "\nfuncao: " + this.getFuncao() + "\n\n\n";
+	}
 }

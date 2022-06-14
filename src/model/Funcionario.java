@@ -71,7 +71,12 @@ public abstract class Funcionario {
 	public double calculaSalario() {
 		return this.salarioBase;
 	}
-	
+	@Override
+	public String toString() 
+	{
+		return "\ncpf: " + this.getCpf() + "\nnome: " + this.getNome() + "\nendereço: " + this.getEndereco() + "\ndata de emissão:"
+	+ this.getDataAdmissao() + "\ntitulação: " + this.getTitulacao() + "\nsalario base: " + this.getSalarioBase() + "\n\n\n";
+	}
 	
 	
 }

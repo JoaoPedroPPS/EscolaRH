@@ -41,12 +41,12 @@ public class Main {
 		case 2:
 			System.out.println("Digite o nome do funcionario que deseja pesquisar: ");
 			buscaNome = op.next();
-			System.out.println(rh.encontraFuncionarioPorNome(buscaNome).toString());
+			System.out.println(rh.encontraFuncionarioPorNome(buscaNome));
 		break;
 
 		case 3:
 			System.out.println(" ");
-			System.out.println(rh.getFuncionarios().toString());
+			System.out.println(rh.getFuncionarios());
 
 		break;
 
